@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(74, 34, 185);    
+}
+
+main {
+   text-align: center;
+    margin: 100px;
+}
+
+div#formulario {
+    background-color: white;
+}
+
+form {
+    background-color: white;
+}
+
