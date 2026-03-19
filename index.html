@@ -19,23 +19,23 @@
                 <p>Seja bem vindo(a) novamente, por favor faça login para acessar sua conta.</p>
             </div>
 
-            <form action="login.php" method="post">
-                <p>
-                    <label for="iemail">E-mail:</label>
-                    <input type="email" name="email" id="iemail">
-                </p>
-                <p>
-                    <label for="isenha">Senha:</label>
-                    <input type="password" name="senha" id="isenha">
-                </p>
+            <form action="login.php" method="post" autocomplete="on">
+                <div class="campo">
+                    <span></span>
+                    <input type="email" name="login" id="ilogin" placeholder="seu e-mail" autocomplete="email" required maxlenght="30">
+                    <label for="ilogin">Login</label>
+                </div>
 
-                <p>
-                    <input type="submit" value="Entrar">
-                </p>
+                <div class="campo">
+                    <span></span>
+                    <input type="password" name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password" required minlength="8" max-lenght="20">
+                    <label for="isenha">Senha</label>
+                </div>
 
-                <p>
-                    <input type="submit" value="Esqueci a senha">
-                </p>
+                <input type="submit" value="Entrar">
+                <a href="esqueci.html">
+                    Esqueci a senha <span></span>
+                </a>
             </form>
         </section>
     </main>   
