@@ -23,7 +23,6 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
 
     background-color: white;
@@ -32,6 +31,7 @@ section#login {
     border-radius: 20px;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.452);
 
+    transform: translate(-50%, -50%);
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
 }
@@ -55,20 +55,45 @@ div#formulario > h1 {
 }
 
 div#formulario > p {
-    font-size: 0.8em;
+    font-size: 1em;
+    margin: 20px 0px;
 }
 
 form > div.campo {
     background-color: #5f2c82;
+    border: 2px solid #5f2c82;
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 
 div.campo label {
     display: none;
+}
+
+div.campo > span {
+   color: white;     
+   font-size: 2em;
+   width: 40px;
+   padding: 5px;
+}
+
+div.campo > input {
+   background-color: #94cfcd;
+   font-size: 1em;
+   width: calc(100% - 44.5px); 
+   height: 100%;
+   border: 0px;
+   border-radius: 8px;
+   padding: 4px;
+   transform: translateY(-12.7px);
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+    border: none;
 }
 
 form > input[type=submit] {
@@ -95,7 +120,6 @@ form > a.botao {
     height: 40px;
     padding-top: 5px;
     margin-top: 5px;
-    background-color: #6cd3fc;
     color: #2d6462;
     border: 1px solid #49a09d;
     border-radius: 7px;
@@ -108,55 +132,5 @@ form > a.botao:hover {
 
 form > a.botao > span {
     font-size: 0.8em;
-}
-
-
-
-
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
-
-    body {
-        background-image: linear-gradient(to top, #49a09d, #5f2c82);
-    }
-
-    section#login {
-        width: 80vw;
-
-    }
-
-    section#login > div#imagem {
-        float:left;
-        width: 30%;
-        height: 100%;
-    }
-
-    section#login > div#formulario {
-        float: right;
-        width: 70%;
-    }
-}
-
-@media screen and (min-width: 992px) {
-
-    body {
-        background-image: linear-gradient(to top, #49a09d, #5f2c82);
-    }
-
-    section#login {
-        width: 950px;
-
-    }
-
-    section#login > div#imagem {
-        float: left;
-        width: 50%;
-        height: 100%;
-    }
-
-    section#login > div#formulario {
-        float: right;
-        width: 50%;
-    }
 }
 
